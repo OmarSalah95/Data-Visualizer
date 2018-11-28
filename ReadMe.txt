@@ -12,5 +12,6 @@ rw_visual
 die.Py
     Stores the class housing dice attributes, and methods.
 die_visual.Py
-    Is used to generate a visual representation of the frequencies of each number being rold at random/ determined sample size.
+    Is used to generate a visual representation of the frequencies of each number being rold at random/ determined sample size. Which is rendered into a .svg file whic can be viewed in the browser.
     
+
