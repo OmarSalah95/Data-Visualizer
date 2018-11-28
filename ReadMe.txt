@@ -9,4 +9,8 @@ random_walk
     Stores a class as well as initialization attributes for generating random walk points
 rw_visual
     Uses a scatter plot to map the points of random walk.
-
+die.Py
+    Stores the class housing dice attributes, and methods.
+die_visual.Py
+    Is used to generate a visual representation of the frequencies of each number being rold at random/ determined sample size.
+    

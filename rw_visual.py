@@ -5,7 +5,7 @@ from random_walk import RandomWalk
 #Keep porgram running while flag is active
 while True:
 #Create Random walk.
-    rw = RandomWalk(50000)
+    rw = RandomWalk(5000)
     rw.fill_walk()
 
     #Set the size of window
