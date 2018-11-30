@@ -17,5 +17,7 @@ grasping basics:
 
 highs_lows
     This will be used to parse and compare Weather data stored in CSV format.
-
+world_population
+    This is used to parse through Json files and map world population counts to a redered visual.
+    
 

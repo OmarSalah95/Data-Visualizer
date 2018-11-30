@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 
 
 #Stores file location for csv module
-filename = 'death_valley_2014.csv'
+filename = 'Resources\sitka_weather_2014.csv'
 
 #Pull and store dates, high, and low temps to respective arrays
 with open(filename) as f:
