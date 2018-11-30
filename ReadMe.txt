@@ -25,4 +25,7 @@ countries
     produces the list of countries used in other files.
 americas
     Renders and highlights the Americas in a seperats generated svg file.
-
+na_populations
+    This was the test run of learning how to render both desired data sets on the same visual.
+world_population
+    Renders an interactive map of the globe highlighting population size by country in 2010
