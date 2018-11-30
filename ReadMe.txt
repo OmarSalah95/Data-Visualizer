@@ -19,5 +19,10 @@ highs_lows
     This will be used to parse and compare Weather data stored in CSV format.
 world_population
     This is used to parse through Json files and map world population counts to a redered visual.
-    
+country_codes
+    Stores fucntion to search and apply the country code.
+countries
+    produces the list of countries used in other files.
+americas
+    Renders and highlights the Americas in a seperats generated svg file.
 
