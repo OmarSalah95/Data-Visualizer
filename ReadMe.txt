@@ -15,17 +15,22 @@ grasping basics:
     die_visual
         Is used to generate a visual representation of the frequencies of each number being rold at random/ determined sample size. Which is rendered into a .svg file whic can be viewed in the browser.
 
-highs_lows
-    This will be used to parse and compare Weather data stored in CSV format.
-world_population
-    This is used to parse through Json files and map world population counts to a redered visual.
-country_codes
-    Stores fucntion to search and apply the country code.
-countries
-    produces the list of countries used in other files.
-americas
-    Renders and highlights the Americas in a seperats generated svg file.
-na_populations
-    This was the test run of learning how to render both desired data sets on the same visual.
-world_population
-    Renders an interactive map of the globe highlighting population size by country in 2010
+World_population_visualization
+    highs_lows
+        This will be used to parse and compare Weather data stored in CSV format.
+    world_population
+        This is used to parse through Json files and map world population counts to a redered visual.
+    country_codes
+        Stores fucntion to search and apply the country code.
+    countries
+        produces the list of countries used in other files.
+    americas
+        Renders and highlights the Americas in a seperats generated svg file.
+    na_populations
+        This was the test run of learning how to render both desired data sets on the same visual.
+    world_population
+        Renders an interactive map of the globe highlighting population size by country in 2010
+
+python_repos
+    Basic git hub api call to extract data needed for visualization referencing repos using python as the main language.
+    
