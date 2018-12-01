@@ -1,4 +1,6 @@
 import requests
+import pygal
+from pygal.style import LightColorizedStyle as LCS, LightenStyle as LS
 
 
 #Make an API call and store it.
@@ -14,22 +16,20 @@ print("Total repositories:", response_dict['total_count'])
 repo_dicts = response_dict['items']
 print('Repositories returned:', len(repo_dicts))
 
-#Examine first repo
-#repo_dict = repo_dicts[0]
-#print("\nKeys:", len(repo_dict))
-
+names, stars = [], []
 #Examine selected information repos.
 print('\nSelected information on repos:')
 for repo_dict in repo_dicts:
-    print('\nName:', repo_dict['name'])
-    print('Owner:', repo_dict['owner']['login'])
-    print('Stars:', repo_dict['stargazers_count'])
-    print('Repository:', repo_dict['html_url'])
-    #print('Created:', repo_dict['created_at'])
-    #print('Updated:', repo_dict['updated_at'])
-    print('Description:', repo_dict['description'])
+    names.append(repo_dict['name'])
+    stars.append(repo_dict['stargazers_count'])
 
-#for key in sorted(repo_dict.keys()):
-    #print(key)
-
+#Set Vislualizuals attributes
+my_style = LS('#333366', base_style = LCS)
+chart = pygal.Bar(style = my_style, x_label_rotation = 45, show_legend = False)
+chart.title = 'Most-Starred Python Projects on Git Hub'
+chart.x_labels = names
+#set Y axis attributes
+chart.add('', stars)
+#Render to WebBrowser SVG file.
+chart.render_to_file('python_repos.svg')
 
