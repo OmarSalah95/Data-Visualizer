@@ -33,4 +33,5 @@ World_population_visualization
 
 python_repos
     Basic git hub api call to extract data needed for visualization referencing repos using python as the main language.
-    
+hn_submissions
+    Uses the hacker news API to generate a list of top stories, links, and related comments.    
