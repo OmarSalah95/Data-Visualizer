@@ -16,12 +16,17 @@ print("Total repositories:", response_dict['total_count'])
 repo_dicts = response_dict['items']
 print('Repositories returned:', len(repo_dicts))
 
-names, stars = [], []
+names, plot_dicts = [], []
 #Examine selected information repos.
 print('\nSelected information on repos:')
 for repo_dict in repo_dicts:
     names.append(repo_dict['name'])
-    stars.append(repo_dict['stargazers_count'])
+    
+    plot_dict = {
+        'value': repo_dict['stargazers_count'],
+        'label': str(repo_dict['description'])
+        }
+    plot_dicts.append(plot_dict)
 
 #Set Vislualizuals attributes
 my_style = LS('#333366', base_style = LCS)
@@ -40,7 +45,6 @@ chart = pygal.Bar(my_config, style = my_style )
 chart.title = 'Most-Starred Python Projects on Git Hub'
 chart.x_labels = names
 #set Y axis attributes
-chart.add('', stars)
+chart.add('', plot_dicts)
 #Render to WebBrowser SVG file.
 chart.render_to_file('python_repos.svg')
-
